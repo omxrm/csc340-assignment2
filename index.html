@@ -2,153 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kitty Gallery</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kitty Gallery</title>
 
-    <!-- Bootstrap CSS (CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Shared Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Cat Gallery</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
-                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="details.html">Featured-Cora</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="new-animal-form.html">Admin</a></li>
-                </ul>
-            </div>
+  <!-- Shared Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Cat Gallery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+        aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="details.html">Featured-Cora</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="new-animal-form.html">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <header class="text-center hero">
+      <h1 class="display-6">Welcome to the UNCG Kitty Gallery</h1>
+      <p class="lead">Bringing you pictures of the cutest kittens out there!</p>
+    </header>
+
+    <!-- Search + Add button -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <input id="searchInput" class="form-control form-control-lg me-3" type="search"
+        placeholder="Search by breed or name" aria-label="Search">
+      <a href="new-animal-form.html" class="btn btn-success btn-lg">Add New Cat</a>
+    </div>
+
+    <!-- Card grid -->
+    <div id="cardGrid" class="row g-4">
+      <!-- Cora the Russian Blue -->
+      <div class="col-12 col-sm-6 col-lg-4 animal-card"
+           data-name="Cora" data-breed="Russian Blue" data-dob="May 2019" data-gender="Female">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top"
+               src="https://azure2.wgp-cdn.co.uk/app-yourcat/posts/Screenshot2024-05-08at134037.png?&format=webp&webp.quality=40&scale=both"
+               alt="Cora the Russian Blue">
+          <div class="card-body">
+            <h5 class="card-title">Cora</h5>
+            <p class="card-text"><em>Russian Blue.</em></p>
+            <ul class="list-unstyled small mb-3">
+              <li><strong>DOB:</strong> May 2019</li>
+              <li><strong>Gender:</strong> Female</li>
+            </ul>
+            <a href="details.html" class="btn btn-primary">View Details</a>
+          </div>
         </div>
-    </nav>
+      </div>
 
-    <main class="container my-4">
-        <header class="text-center hero">
-            <h1 class="display-6">Welcome to the UNCG Kitty Gallery</h1>
-            <p class="lead">Bringing you pictures of the cutest kittens out there!</p>
-        </header>
-
-        <!-- Search + Add button -->
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <input id="searchInput" class="form-control form-control-lg me-3" type="search"
-                placeholder="Search by breed or name" aria-label="Search">
-            <a href="new-animal-form.html" class="btn btn-success btn-lg">Add New Cat</a>
+      <!-- Mocha the Siamese -->
+      <div class="col-12 col-sm-6 col-lg-4 animal-card"
+           data-name="Mocha" data-breed="Siamese" data-dob="March 2020" data-gender="Male">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top"
+               src="https://www.trupanion.com/images/trupanionwebsitelibraries/bg/siamese-cat-pose.jpg?sfvrsn=baac8bf0_5"
+               alt="Mocha the Siamese">
+          <div class="card-body">
+            <h5 class="card-title">Mocha</h5>
+            <p class="card-text"><em>Siamese.</em></p>
+            <ul class="list-unstyled small mb-3">
+              <li><strong>DOB:</strong> March 2020</li>
+              <li><strong>Gender:</strong> Male</li>
+            </ul>
+            <a href="details.html" class="btn btn-primary">View Details</a>
+          </div>
         </div>
+      </div>
 
-        <!-- Card grid -->
-        <div id="cardGrid" class="row g-4">
-            <!-- Cora the Russian Blue -->
-            <div class="col-12 col-sm-6 col-lg-4 animal-card" data-name="Cora" data-breed="Russian Blue">
-                <div class="card h-100">
-                    <img class="card-img-top" src="https://azure2.wgp-cdn.co.uk/app-yourcat/posts/Screenshot2024-05-08at134037.png?&format=webp&webp.quality=40&scale=both"
-                        alt="Cora the Russian Blue">
-                    <div class="card-body">
-                        <h5 class="card-title">Cora</h5>
-                        <p class="card-text"><em>Russian Blue.</em></p>
-                        <a href="details.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Mocha the Siamese -->
-            <div class="col-12 col-sm-6 col-lg-4 animal-card" data-name="Mocha" data-breed="Siamese">
-                <div class="card h-100">
-                    <img class="card-img-top"
-                        src="https://www.trupanion.com/images/trupanionwebsitelibraries/bg/siamese-cat-pose.jpg?sfvrsn=baac8bf0_5"
-                        alt="Mocha the Siamese">
-                    <div class="card-body">
-                        <h5 class="card-title">Mocha</h5>
-                        <p class="card-text"><em>Siamese.</em></p>
-                        <a href="details.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Goliath the Maine Coon -->
-            <div class="col-12 col-sm-6 col-lg-4 animal-card" data-name="Goliath" data-breed="Maine Coon">
-                <div class="card h-100">
-                    <img class="card-img-top" src="https://www.thesprucepets.com/thmb/MzKr6fC-v8W4D4oz2p9wWCwAFms=/2119x0/filters:no_upscale():strip_icc()/GettyImages-1189893683-e0ff70596b3b4f0687ba573e5a671f74.jpg"
-                        alt="Goliath the Maine Coon">
-                    <div class="card-body">
-                        <h5 class="card-title">Goliath</h5>
-                        <p class="card-text"><em>Maine Coon.</em></p>
-                        <a href="details.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cleo the Sphynx -->
-            <div class="col-12 col-sm-6 col-lg-4 animal-card" data-name="Cleo" data-breed="Sphynx">
-                <div class="card h-100">
-                    <img class="card-img-top"
-                        src="https://cfa.org/wp-content/uploads/2024/03/Sphynx_About_Tetsu.jpg"
-                        alt="Cleo the Sphynx">
-                    <div class="card-body">
-                        <h5 class="card-title">Cleo</h5>
-                        <p class="card-text"><em>Sphynx.</em></p>
-                        <a href="details.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Milo the Persian -->
-            <div class="col-12 col-sm-6 col-lg-4 animal-card" data-name="Milo" data-breed="Persian">
-                <div class="card h-100">
-                    <img class="card-img-top"
-                        src="https://www.thesprucepets.com/thmb/-NBb6IA5ffDmoffcnw6xnThYkzw=/4000x0/filters:no_upscale():strip_icc()/spruce-pets-persian-cat-header-8a7203fbe8574f7e8dbc22cc99c5b606.jpg"
-                        alt="Milo the Persian">
-                    <div class="card-body">
-                        <h5 class="card-title">Milo</h5>
-                        <p class="card-text"><em>Persian.</em></p>
-                        <a href="details.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Luna the American Curl -->
-            <div class="col-12 col-sm-6 col-lg-4 animal-card" data-name="Luna" data-breed="American Curl">
-                <div class="card h-100">
-                    <img class="card-img-top"
-                        src="https://image.petmd.com/files/styles/978x550/public/2024-07/american-curl.jpg?w=2048&q=75"
-                        alt="Luna the American Curl">
-                    <div class="card-body">
-                        <h5 class="card-title">Luna</h5>
-                        <p class="card-text"><em>American Curl.</em></p>
-                        <a href="details.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
+      <!-- Goliath the Maine Coon -->
+      <div class="col-12 col-sm-6 col-lg-4 animal-card"
+           data-name="Goliath" data-breed="Maine Coon" data-dob="June 2018" data-gender="Male">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top"
+               src="https://www.thesprucepets.com/thmb/MzKr6fC-v8W4D4oz2p9wWCwAFms=/2119x0/filters:no_upscale():strip_icc()/GettyImages-1189893683-e0ff70596b3b4f0687ba573e5a671f74.jpg"
+               alt="Goliath the Maine Coon">
+          <div class="card-body">
+            <h5 class="card-title">Goliath</h5>
+            <p class="card-text"><em>Maine Coon.</em></p>
+            <ul class="list-unstyled small mb-3">
+              <li><strong>DOB:</strong> June 2018</li>
+              <li><strong>Gender:</strong> Male</li>
+            </ul>
+            <a href="details.html" class="btn btn-primary">View Details</a>
+          </div>
         </div>
-    </main>
+      </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Cleo the Sphynx -->
+      <div class="col-12 col-sm-6 col-lg-4 animal-card"
+           data-name="Cleo" data-breed="Sphynx" data-dob="August 2021" data-gender="Female">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top"
+               src="https://cfa.org/wp-content/uploads/2024/03/Sphynx_About_Tetsu.jpg"
+               alt="Cleo the Sphynx">
+          <div class="card-body">
+            <h5 class="card-title">Cleo</h5>
+            <p class="card-text"><em>Sphynx.</em></p>
+            <ul class="list-unstyled small mb-3">
+              <li><strong>DOB:</strong> August 2021</li>
+              <li><strong>Gender:</strong> Female</li>
+            </ul>
+            <a href="details.html" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
 
-    <!-- Tiny client-side search -->
-    <script>
-        const input = document.getElementById('searchInput');
-        const cards = document.querySelectorAll('.animal-card');
-        input.addEventListener('input', () => {
-            const q = input.value.toLowerCase();
-            cards.forEach(card => {
-                const name = card.dataset.name.toLowerCase();
-                const breed = card.dataset.breed.toLowerCase();
-                card.style.display = (name.includes(q) || breed.includes(q)) ? '' : 'none';
-            });
-        });
-    </script>
+      <!-- Milo the Persian -->
+      <div class="col-12 col-sm-6 col-lg-4 animal-card"
+           data-name="Milo" data-breed="Persian" data-dob="January 2017" data-gender="Male">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top"
+               src="https://www.thesprucepets.com/thmb/-NBb6IA5ffDmoffcnw6xnThYkzw=/4000x0/filters:no_upscale():strip_icc()/spruce-pets-persian-cat-header-8a7203fbe8574f7e8dbc22cc99c5b606.jpg"
+               alt="Milo the Persian">
+          <div class="card-body">
+            <h5 class="card-title">Milo</h5>
+            <p class="card-text"><em>Persian.</em></p>
+            <ul class="list-unstyled small mb-3">
+              <li><strong>DOB:</strong> January 2017</li>
+              <li><strong>Gender:</strong> Male</li>
+            </ul>
+            <a href="details.html" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Luna the American Curl -->
+      <div class="col-12 col-sm-6 col-lg-4 animal-card"
+           data-name="Luna" data-breed="American Curl" data-dob="October 2022" data-gender="Female">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top"
+               src="https://image.petmd.com/files/styles/978x550/public/2024-07/american-curl.jpg?w=2048&q=75"
+               alt="Luna the American Curl">
+          <div class="card-body">
+            <h5 class="card-title">Luna</h5>
+            <p class="card-text"><em>American Curl.</em></p>
+            <ul class="list-unstyled small mb-3">
+              <li><strong>DOB:</strong> October 2022</li>
+              <li><strong>Gender:</strong> Female</li>
+            </ul>
+            <a href="details.html" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Tiny client-side search -->
+  <script>
+    const input = document.getElementById('searchInput');
+    const cards = document.querySelectorAll('.animal-card');
+    input.addEventListener('input', () => {
+      const q = input.value.toLowerCase();
+      cards.forEach(card => {
+        const name = card.dataset.name.toLowerCase();
+        const breed = card.dataset.breed.toLowerCase();
+        card.style.display = (name.includes(q) || breed.includes(q)) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 
 </html>
