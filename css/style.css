@@ -1,0 +1,22 @@
+/* Minimal custom styles to complement Bootstrap */
+.hero {
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.custom-nav {
+    background-color: rgb(8, 0, 255);
+}
+
+/* keep cards nicely cropped */
+
+.detail-img {
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+}
